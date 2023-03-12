@@ -76,6 +76,23 @@ section::before{
     font-size: 24px;
 }
 
+.contact{
+    padding-bottom: 128px;
+}
+
+.contact::before{
+    content:'Contact';
+}
+
+.contact-form{
+    border: 1px solid black;
+    padding: 64px 32px ;
+}
+
+.form-label{
+    font-weight: 700;
+}
+
 .work-img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

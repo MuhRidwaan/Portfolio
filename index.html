@@ -28,7 +28,7 @@
       </nav>
 
       <section id="home" class="home container">
-        <div class="row d-flax align-item-center flex-md-row flex-colomn-reverse">
+        <div class="row d-flex align-items-center flex-md-row flex-colomn-reverse">
             <div class="col-12 col-md-8">
                 <h3>Hi I'Am</h3>
                 <h1>John Doe</h1>
@@ -100,6 +100,56 @@
                     <img src="images/work-3.png" alt="work-3">    
                 </div>
 
+            </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact container">
+        <div class="row d-flex align-items-center gap-5">
+            <div class="col">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maxime eligendi perspiciatis? Fugiat dicta odio vitae pariatur! Blanditiis hic sunt porro eos aperiam cum! Id illo minima odio inventore. Natus facilis enim molestias ipsum ipsam accusamus tempora accusantium, explicabo dolorem excepturi fuga perferendis! Rerum necessitatibus tempore omnis obcaecati accusamus cumque!</p>
+
+                <div class="row">
+                    <div class="col d-flex align-items-center">
+                        <img src="images/Facebook.svg" alt="Facebook Icon">
+                        <br>
+                        <p>John Doe</p>
+                    </div>
+    
+                    <div class="col d-flex align-items-center">
+                        <img src="images/Instagram.svg" alt="Instagram Icon">
+                        <p>@John-Doe</p>
+                    </div>
+                    
+                    <div class="col d-flex align-items-center">
+                        <img src="images/Twitter.svg" alt="Twitter Icon">
+                        <p>@john_DoE-1</p>
+                    </div>
+                </div>
+                </div>
+            <div class="col">
+
+                <form class="contact-form" onsubmit="onFormSubmit(event)">
+                    <div class="mb-3">
+                      <label for="inp_email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="inp_email" placeholder="example@gmail.com" required>                  
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="inp_subject" class="form-label">Subject</label>
+                      <input type="text" class="form-control" id="inp_subject" placeholder="Your Subject" required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="inp_message" class="form-label">Message</label>
+                      <input type="text" class="form-control" id="inp_message" placeholder="Your Message" required>
+                    </div>
+                    
+                    <div class="d-flex justify-content-center mt-5 ">
+                        <button type="submit" class="btn button">Submit</button>
+                    </div>
+                    
+                  </form>
             </div>
         </div>
       </section>
