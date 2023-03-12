@@ -1,3 +1,7 @@
+*{
+    scroll-behavior: smooth;
+}
+
 section{
     padding-top: 128px;
     position: relative;
@@ -24,12 +28,19 @@ section::before{
     color: white;
     background-color: black;
 }
+.MyName{
+    animation: 2s slide infinite;
+}
 .navbar{
     background-color: #fff;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.25);
 }
 #arrow{
     animation: 2s upDown infinite;
+}
+
+.home .arrow img{
+    width: 60px;
 }
 
 .about::before{
@@ -124,6 +135,19 @@ section::before{
     content: 'Web Project';
 }
 
+@media only screen and (max-width: 768px) {
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: 15px;
+        font-size: 64px;
+    }
+}
+
 @keyframes upDown {
     0%{
         transform: translateY(0);
@@ -135,3 +159,16 @@ section::before{
         transform: translateY(0);
     }
 }
+
+@keyframes slide {
+    0%{
+        transform:translateX() (0);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
